@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pesona Nusantara · Pariwisata Premium</title>
+
+  <!-- ===== CSS EXTERNAL ===== -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ===== BOOTSTRAP 5.3 ===== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========================================= -->
+  <!-- NAVBAR DENGAN SEARCH -->
+  <!-- ========================================= -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-compass-fill me-2" style="color: #f9d77e;"></i>PesonaNusa
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinasi">Destinasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#event">Event</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paket">Paket</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+        <!-- Search Form -->
+        <div class="search-wrapper ms-3">
+          <div class="search-container">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" class="search-input" id="searchInput" placeholder="Cari destinasi wisata..." />
+            <button class="search-btn" id="searchBtn">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================= -->
+  <!-- HERO VIDEO BACKGROUND -->
+  <!-- ========================================= -->
+  <section id="home" class="hero-video-section">
+    <video autoplay muted loop playsinline class="hero-video-bg" id="heroVideo">
+      <source src="https://i.imgur.com/MsQse4I.mp4" type="video/mp4" />
+      <div class="hero-fallback" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e);"></div>
+    </video>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <div class="floating-badge">
+        <i class="bi bi-geo-alt-fill me-2"></i>Jelajahi Keindahan Nusantara
+      </div>
+      <h1 class="hero-title">
+        Pesona <span style="background: linear-gradient(45deg, #f9d77e, #f5a623); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Indonesia</span>
+      </h1>
+      <p class="hero-subtitle">
+        Rasakan pengalaman wisata tak terlupakan di surga tersembunyi dari Sabang sampai Merauke.
+      </p>
+      <div class="hero-buttons">
+        <a href="#destinasi" class="btn btn-cta btn-lg pulse-animation">Mulai Petualangan <i class="bi bi-arrow-right ms-2"></i></a>
+        <a href="#kontak" class="btn btn-outline-light btn-lg ms-3">Hubungi Kami</a>
+      </div>
+      <div class="hero-stats mt-5">
+        <div class="stat-item">
+          <span class="stat-number" data-count="100">0</span>
+          <span class="stat-label">Destinasi</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="500">0</span>
+          <span class="stat-label">Traveler</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="50">0</span>
+          <span class="stat-label">Paket Wisata</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="mouse-scroll"></div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- TENTANG -->
+  <!-- ========================================= -->
+  <section id="tentang" class="section-tentang" style="background: #ffffff;">
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="section-badge">TENTANG KAMI</span>
+          <h2 class="section-title text-start">Mengenal Lebih Dekat <br/><span style="color: #f9d77e;">PesonaNusa</span></h2>
+          <p class="lead" style="color: #0b2a3b;">
+            PesonaNusa adalah platform digital yang mempromosikan keindahan pariwisata Indonesia, menghubungkan traveler dengan destinasi eksotis dan pengalaman otentik.
+          </p>
+          <p>
+            Kami menghadirkan informasi lengkap mulai dari destinasi populer, paket wisata hemat, hingga galeri visual yang memukau. Dikurasi oleh tim ahli, setiap rekomendasi kami pastikan berkualitas.
+          </p>
+          <div class="row mt-4 feature-grid">
+            <div class="col-sm-6 feature-item" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-check-circle-fill text-warning me-2"></i> 100+ destinasi terkurasi
+            </div>
+            <div class="col-sm-6 feature-item" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-check-circle-fill text-warning me-2"></i> 500+ traveler puas
+            </div>
+            <div class="col-sm-6 feature-item" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-check-circle-fill text-warning me-2"></i> Paket fleksibel
+            </div>
+            <div class="col-sm-6 feature-item" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-check-circle-fill text-warning me-2"></i> 24/7 customer support
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="image-wrapper">
+            <img src="https://i.imgur.com/96WlYkF.png" alt="Tentang Wisata" class="img-fluid rounded-4 shadow-lg featured-image" />
+            <div class="floating-card">
+              <i class="bi bi-star-fill text-warning"></i>
+              <span>4.9/5 Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- DESTINASI DENGAN CAROUSEL -->
+  <!-- ========================================= -->
+  <section id="destinasi" class="section-destinasi" style="background: linear-gradient(135deg, #f0f4f8 0%, #e8edf5 100%);">
+    <div class="container position-relative">
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-badge">DESTINASI</span>
+        <h2 class="section-title">Destinasi Populer</h2>
+        <p class="text-muted">Geser atau klik kartu untuk melihat detail lengkap destinasi</p>
+      </div>
+
+      <!-- CAROUSEL DESTINASI -->
+      <div id="destinasiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- Indikator -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slide -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal1">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/SxEG0dZ.jpeg" alt="Pantai Kuta" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Bali</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pantai Kuta</h5>
+                    <p class="card-text small">Surga sunset dan ombak sempurna di pulau Dewata.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.8</span>
+                      <span><i class="bi bi-clock"></i> 3 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal2">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/h1PAC7H.jpeg" alt="Raja Ampat" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Papua</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Raja Ampat</h5>
+                    <p class="card-text small">Keindahan bawah laut terbaik di dunia.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                      <span><i class="bi bi-clock"></i> 5 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal3">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/AnIwfCG.jpeg" alt="Borobudur" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Jateng</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Candi Borobudur</h5>
+                    <p class="card-text small">Warisan Buddha megah dengan panorama matahari terbit.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.7</span>
+                      <span><i class="bi bi-clock"></i> 4 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal4">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/3OfcWx9.jpeg" alt="Labuan Bajo" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> NTT</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Labuan Bajo</h5>
+                    <p class="card-text small">Gerbang menuju komodo dan laut biru memukau.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                      <span><i class="bi bi-clock"></i> 6 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal5">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/C1Cakxu.jpeg" alt="Pantai Pink" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Lombok</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pantai Pink</h5>
+                    <p class="card-text small">Pantai berpasir merah muda yang eksotis di Lombok.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.7</span>
+                      <span><i class="bi bi-clock"></i> 4 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal6">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/hqIFOX8.jpeg" alt="Gunung Bromo" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Jatim</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Gunung Bromo</h5>
+                    <p class="card-text small">Keindahan sunrise di atas lautan pasir yang menakjubkan.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                      <span><i class="bi bi-clock"></i> 6 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal7">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/IaPNlTm.jpeg" alt="Tana Toraja" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Sulsel</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Tana Toraja</h5>
+                    <p class="card-text small">Budaya unik dan pemandangan alam yang memukau.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.6</span>
+                      <span><i class="bi bi-clock"></i> 5 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal8">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/RQmUB5N.jpeg" alt="Wayag" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Raja Ampat</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Kepulauan Wayag</h5>
+                    <p class="card-text small">Surga tersembunyi dengan pemandangan karst yang ikonik.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                      <span><i class="bi bi-clock"></i> 7 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal9">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/zBtXJVP.jpeg" alt="Pulau Komodo" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> NTT</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pulau Komodo</h5>
+                    <p class="card-text small">Habitat asli komodo dengan pemandangan savana eksotis.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.8</span>
+                      <span><i class="bi bi-clock"></i> 8 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal10">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/a3DhGTj.jpeg" alt="Nusa Penida" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Bali</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Nusa Penida</h5>
+                    <p class="card-text small">Tebing tinggi dan air laut biru jernih di sisi timur Bali.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.7</span>
+                      <span><i class="bi bi-clock"></i> 5 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal11">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/s4XZWjW.jpeg" alt="Kota Lama" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Jateng</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Kota Lama Semarang</h5>
+                    <p class="card-text small">Wisata heritage dengan arsitektur kolonial Belanda.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.5</span>
+                      <span><i class="bi bi-clock"></i> 3 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destinasi" data-bs-toggle="modal" data-bs-target="#destinasiModal12">
+                  <div class="card-image-wrapper">
+                    <img src="https://i.imgur.com/AMiQe3E.jpeg" alt="Sabang" />
+                    <div class="card-overlay">
+                      <span class="badge-wisata"><i class="bi bi-geo-alt-fill me-1"></i> Aceh</span>
+                    </div>
+                    <div class="card-hover-icon"><i class="bi bi-search-plus"></i></div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pulau Sabang</h5>
+                    <p class="card-text small">Surga diving di ujung barat Indonesia.</p>
+                    <div class="card-footer-info">
+                      <span><i class="bi bi-star-fill text-warning"></i> 4.6</span>
+                      <span><i class="bi bi-clock"></i> 6 jam</span>
+                      <span class="text-primary">Lihat Detail →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#destinasiCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#destinasiCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- MODAL DESTINASI 1-12 -->
+  <!-- ========================================= -->
+
+  <!-- Modal 1: Pantai Kuta -->
+  <div class="modal fade" id="destinasiModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Pantai Kuta, Bali</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/SxEG0dZ.jpeg" class="img-fluid rounded-3" alt="Pantai Kuta" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Pantai Kuta adalah salah satu destinasi wisata paling ikonik di Bali. Terkenal dengan pasir putihnya yang lembut, ombak yang cocok untuk berselancar, dan pemandangan matahari terbenam yang spektakuler.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">24 Jam (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Gratis (Biaya parkir Rp 5.000)</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.8/5 (12.345 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Kuta, Badung, Bali</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏖️ Parkir Luas</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🚻 Toilet Umum</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🍽️ Warung Makan</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏄 Penyewaan Surfboard</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Pantai Kuta, Bali" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Raja Ampat -->
+  <div class="modal fade" id="destinasiModal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Raja Ampat, Papua</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/h1PAC7H.jpeg" class="img-fluid rounded-3" alt="Raja Ampat" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Raja Ampat adalah surga bawah laut yang terletak di ujung timur Indonesia. Dengan keanekaragaman hayati laut tertinggi di dunia, tempat ini menawarkan pengalaman menyelam yang tak tertandingi.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">08.00 - 17.00 (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 150.000 - Rp 500.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.9/5 (8.234 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Raja Ampat, Papua Barat</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🤿 Snorkeling</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🐠 Diving</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏠 Homestay</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🧭 Guide Lokal</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Raja Ampat, Papua" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Candi Borobudur -->
+  <div class="modal fade" id="destinasiModal3" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Candi Borobudur, Jateng</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/AnIwfCG.jpeg" class="img-fluid rounded-3" alt="Borobudur" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Candi Borobudur adalah warisan budaya dunia yang megah, dibangun pada abad ke-8 oleh Dinasti Syailendra. Candi Buddha terbesar di dunia ini memiliki 10 tingkatan dengan ribuan panel relief dan stupa.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">06.00 - 17.00 (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 50.000 - Rp 100.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.7/5 (15.678 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Borobudur, Magelang, Jawa Tengah</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🧭 Guide Wisata</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🅿️ Area Parkir</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏛️ Museum</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🌅 Sunrise Tour</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Candi Borobudur, Jateng" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Labuan Bajo -->
+  <div class="modal fade" id="destinasiModal4" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Labuan Bajo, NTT</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/3OfcWx9.jpeg" class="img-fluid rounded-3" alt="Labuan Bajo" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Labuan Bajo adalah gerbang menuju Taman Nasional Komodo, rumah bagi hewan purba komodo. Selain komodo, kawasan ini menawarkan pemandangan laut yang memukau dan spot menyelam yang menakjubkan.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">08.00 - 18.00 (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 200.000 - Rp 600.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.9/5 (9.876 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Labuan Bajo, Manggarai Barat, NTT</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">⛵ Liveaboard</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🤿 Snorkeling</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🥾 Trekking</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🌅 Spot Sunset</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Labuan Bajo, NTT" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Pantai Pink -->
+  <div class="modal fade" id="destinasiModal5" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Pantai Pink, Lombok</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/C1Cakxu.jpeg" class="img-fluid rounded-3" alt="Pantai Pink" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Pantai Pink adalah salah satu pantai paling unik di Indonesia dengan pasir berwarna merah muda akibat campuran fragmen karang merah dan pasir putih. Terletak di Pulau Lombok, pantai ini menawarkan pemandangan yang eksotis.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">07.00 - 18.00 (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 15.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.7/5 (5.678 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Lombok, Nusa Tenggara Barat</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏖️ Pasir Pink</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🤿 Snorkeling</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">📸 Spot Foto</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Pantai Pink, Lombok" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Gunung Bromo -->
+  <div class="modal fade" id="destinasiModal6" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Gunung Bromo, Jatim</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/hqIFOX8.jpeg" class="img-fluid rounded-3" alt="Gunung Bromo" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Gunung Bromo adalah gunung berapi aktif yang terkenal dengan pemandangan sunrise-nya yang spektakuler. Terletak di Jawa Timur, kawasan ini menawarkan lautan pasir yang luas dan pemandangan alam yang memukau.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">24 Jam (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 25.000 - Rp 50.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.9/5 (10.234 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Bromo, Probolinggo, Jawa Timur</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🌄 Sunrise Tour</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🐴 Sewa Kuda</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">📸 Spot Foto</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Gunung Bromo, Jatim" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Tana Toraja -->
+  <div class="modal fade" id="destinasiModal7" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Tana Toraja, Sulsel</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/IaPNlTm.jpeg" class="img-fluid rounded-3" alt="Tana Toraja" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Tana Toraja adalah destinasi wisata budaya yang terkenal dengan upacara kematian yang unik dan pemandangan alam yang indah. Terletak di Sulawesi Selatan, tempat ini menawarkan pengalaman budaya yang tak terlupakan.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">08.00 - 17.00 (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 30.000 - Rp 75.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.6/5 (3.456 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Tana Toraja, Sulawesi Selatan</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏛️ Budaya</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🧭 Guide Lokal</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">📸 Spot Foto</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Tana Toraja, Sulsel" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Kepulauan Wayag -->
+  <div class="modal fade" id="destinasiModal8" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Kepulauan Wayag, Raja Ampat</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/RQmUB5N.jpeg" class="img-fluid rounded-3" alt="Wayag" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Kepulauan Wayag adalah ikon Raja Ampat dengan pemandangan karst yang menjulang di tengah laut biru. Tempat ini menawarkan pemandangan yang sangat fotogenik dan pengalaman menjelajah yang tak terlupakan.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">08.00 - 17.00 (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 200.000 - Rp 500.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.9/5 (4.567 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Raja Ampat, Papua Barat</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">⛵ Boat Tour</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">📸 Spot Foto</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🤿 Snorkeling</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Kepulauan Wayag, Raja Ampat" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 9: Pulau Komodo -->
+  <div class="modal fade" id="destinasiModal9" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Pulau Komodo, NTT</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/zBtXJVP.jpeg" class="img-fluid rounded-3" alt="Pulau Komodo" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Pulau Komodo adalah habitat asli komodo, hewan purba yang hanya ada di Indonesia. Selain komodo, pulau ini menawarkan savana yang eksotis dan pemandangan laut yang memukau.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">07.00 - 17.00 (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 150.000 - Rp 400.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.8/5 (7.890 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Pulau Komodo, NTT</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🦎 Lihat Komodo</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🧭 Guide</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🥾 Trekking</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Pulau Komodo, NTT" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 10: Nusa Penida -->
+  <div class="modal fade" id="destinasiModal10" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Nusa Penida, Bali</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/a3DhGTj.jpeg" class="img-fluid rounded-3" alt="Nusa Penida" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Nusa Penida adalah pulau yang terletak di tenggara Bali, terkenal dengan tebing tinggi, air laut biru jernih, dan pantai-pantai yang eksotis. Tempat ini adalah surga bagi para pecinta alam dan fotografi.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">24 Jam (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 25.000 - Rp 50.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.7/5 (6.543 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Nusa Penida, Bali</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">📸 Spot Foto</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🤿 Snorkeling</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🧭 Tour Guide</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Nusa Penida, Bali" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 11: Kota Lama Semarang -->
+  <div class="modal fade" id="destinasiModal11" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Kota Lama Semarang, Jateng</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/s4XZWjW.jpeg" class="img-fluid rounded-3" alt="Kota Lama Semarang" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Kota Lama Semarang adalah kawasan heritage dengan bangunan-bangunan bergaya kolonial Belanda yang masih terawat. Tempat ini menawarkan pengalaman wisata sejarah yang unik di tengah kota.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">24 Jam (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Gratis</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.5/5 (4.321 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Semarang, Jawa Tengah</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏛️ Heritage</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">📸 Spot Foto</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">☕ Cafe</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Kota Lama Semarang, Jateng" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 12: Pulau Sabang -->
+  <div class="modal fade" id="destinasiModal12" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background: linear-gradient(135deg, #0b2a3b, #1b4a5e); color: white; border-radius: 0;">
+          <h5 class="modal-title"><i class="bi bi-geo-alt-fill me-2"></i>Pulau Sabang, Aceh</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 25px;">
+          <div class="text-center mb-4">
+            <img src="https://i.imgur.com/AMiQe3E.jpeg" class="img-fluid rounded-3" alt="Pulau Sabang" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px;" />
+          </div>
+          <h4 class="mt-3" style="color: #0b2a3b; font-weight: 700;"><i class="bi bi-info-circle-fill text-warning me-2"></i>Deskripsi</h4>
+          <p style="color: #555; line-height: 1.8;">Pulau Sabang adalah surga diving di ujung barat Indonesia. Dengan keindahan bawah laut yang memukau dan pantai yang eksotis, tempat ini menjadi destinasi favorit para pecinta laut.</p>
+          <div class="row mt-4">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-clock-fill text-warning me-2"></i>Jam Operasional</h6><p class="mb-0">24 Jam (Setiap Hari)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-ticket-fill text-warning me-2"></i>Harga Tiket</h6><p class="mb-0">Rp 10.000 - Rp 25.000</p></div></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-star-fill text-warning me-2"></i>Rating</h6><p class="mb-0">4.6/5 (3.210 ulasan)</p></div></div>
+            <div class="col-md-6 mt-3 mt-md-0"><div class="p-3 bg-light rounded-3"><h6><i class="bi bi-geo-alt-fill text-warning me-2"></i>Lokasi</h6><p class="mb-0">Sabang, Aceh</p></div></div>
+          </div>
+          <div class="mt-4">
+            <h6><i class="bi bi-grid-fill text-warning me-2"></i>Fasilitas</h6>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🤿 Diving</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">🏖️ Pantai</span>
+              <span class="badge bg-light text-dark me-1 mb-1" style="padding: 8px 16px; font-size: 0.85rem;">⛵ Boat Tour</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #eee;">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 30px; padding: 10px 30px;">Tutup</button>
+          <a href="#" class="btn btn-outline-warning wa-ticket" data-destinasi="Pulau Sabang, Aceh" style="border-radius: 30px; padding: 10px 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><i class="fab fa-whatsapp me-2"></i>Pesan Tiket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================= -->
+  <!-- EVENT DENGAN BACKGROUND GAMBAR -->
+  <!-- ========================================= -->
+  <section id="event" class="section-event" style="background-image: url('https://i.imgur.com/Zr2u8kB.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="section-overlay" style="background: rgba(11, 42, 59, 0.75);"></div>
+    <div class="container position-relative">
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-badge" style="background: linear-gradient(45deg, #f9d77e, #f5a623);">EVENT & FESTIVAL</span>
+        <h2 class="section-title" style="color: #ffffff;">Event & Festival Lokal</h2>
+        <p class="text-light" style="opacity: 0.9;">Rasakan pengalaman budaya yang tak terlupakan di berbagai event dan festival</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card event-card">
+            <div class="event-image">
+              <img src="https://i.imgur.com/lxwI7lP.jpeg" alt="Festival Bali" />
+              <div class="event-date">
+                <span class="day">15</span>
+                <span class="month">Jun</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="event-title">Festival Seni Bali</h5>
+              <p class="event-desc">Pertunjukan seni dan budaya tradisional Bali yang digelar setiap tahun di Denpasar.</p>
+              <div class="event-meta">
+                <span><i class="bi bi-geo-alt-fill text-warning"></i> Denpasar, Bali</span>
+                <span><i class="bi bi-people-fill text-warning"></i> 5.000+ Pengunjung</span>
+              </div>
+              <a href="#kontak" class="btn btn-event mt-2">Info Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card event-card">
+            <div class="event-image">
+              <img src="https://i.imgur.com/Vj94bmu.jpeg" alt="Festival Komodo" />
+              <div class="event-date">
+                <span class="day">20</span>
+                <span class="month">Jul</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="event-title">Festival Komodo</h5>
+              <p class="event-desc">Perayaan tahunan untuk melestarikan hewan purba komodo dengan berbagai atraksi budaya.</p>
+              <div class="event-meta">
+                <span><i class="bi bi-geo-alt-fill text-warning"></i> Labuan Bajo, NTT</span>
+                <span><i class="bi bi-people-fill text-warning"></i> 3.000+ Pengunjung</span>
+              </div>
+              <a href="#kontak" class="btn btn-event mt-2">Info Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card event-card">
+            <div class="event-image">
+              <img src="https://i.imgur.com/WetOWC9.jpeg" alt="Festival Borobudur" />
+              <div class="event-date">
+                <span class="day">5</span>
+                <span class="month">Agu</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="event-title">Festival Borobudur</h5>
+              <p class="event-desc">Perayaan budaya dan spiritual di Candi Borobudur dengan pertunjukan wayang dan seni.</p>
+              <div class="event-meta">
+                <span><i class="bi bi-geo-alt-fill text-warning"></i> Magelang, Jateng</span>
+                <span><i class="bi bi-people-fill text-warning"></i> 10.000+ Pengunjung</span>
+              </div>
+              <a href="#kontak" class="btn btn-event mt-2">Info Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- PAKET WISATA -->
+  <!-- ========================================= -->
+  <section id="paket" class="section-paket" style="background: #ffffff;">
+    <div class="container position-relative">
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-badge">PAKET</span>
+        <h2 class="section-title">Paket Wisata & Layanan</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card card-paket p-4 text-center h-100">
+            <div class="paket-image">
+              <img src="https://i.imgur.com/ehOLCoA.png" alt="Paket Hemat" />
+              <div class="paket-badge">HEMAT</div>
+            </div>
+            <h5 class="paket-title mt-3">Paket Hemat</h5>
+            <p class="paket-desc">3 hari 2 malam, transportasi + hotel bintang 3, cocok untuk backpacker.</p>
+            <div class="paket-price">Rp 1.200.000</div>
+            <div class="package-features">
+              <span><i class="bi bi-check-circle-fill text-success"></i> Hotel 3*</span>
+              <span><i class="bi bi-check-circle-fill text-success"></i> Transport</span>
+              <span><i class="bi bi-check-circle-fill text-success"></i> Breakfast</span>
+            </div>
+            <a href="#" class="btn btn-paket mt-3 wa-order" data-paket="Paket Hemat" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Pesan Sekarang <i class="fab fa-whatsapp ms-2"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card card-paket p-4 text-center h-100 popular-package">
+            <div class="popular-badge">POPULER</div>
+            <div class="paket-image">
+              <img src="https://i.imgur.com/XnCD3Rp.png" alt="Paket Premium" />
+              <div class="paket-badge premium">PREMIUM</div>
+            </div>
+            <h5 class="paket-title mt-3">Paket Premium</h5>
+            <p class="paket-desc">5 hari 4 malam, all-inclusive, private tour, villa mewah + spa.</p>
+            <div class="paket-price premium-price">Rp 4.750.000</div>
+            <div class="package-features">
+              <span><i class="bi bi-check-circle-fill text-success"></i> Villa Mewah</span>
+              <span><i class="bi bi-check-circle-fill text-success"></i> Private Tour</span>
+              <span><i class="bi bi-check-circle-fill text-success"></i> Spa & Dinner</span>
+            </div>
+            <a href="#" class="btn btn-paket-premium mt-3 wa-order" data-paket="Paket Premium" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Pesan Sekarang <i class="fab fa-whatsapp ms-2"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card card-paket p-4 text-center h-100">
+            <div class="paket-image">
+              <img src="https://i.imgur.com/gbRtYrG.png" alt="Paket Grup" />
+              <div class="paket-badge">GRUP</div>
+            </div>
+            <h5 class="paket-title mt-3">Paket Grup</h5>
+            <p class="paket-desc">Diskon spesial untuk rombongan 10+ orang, termasuk guide profesional.</p>
+            <div class="paket-price">Mulai Rp 950.000</div>
+            <div class="package-features">
+              <span><i class="bi bi-check-circle-fill text-success"></i> Guide</span>
+              <span><i class="bi bi-check-circle-fill text-success"></i> Diskon Grup</span>
+              <span><i class="bi bi-check-circle-fill text-success"></i> Custom</span>
+            </div>
+            <a href="#" class="btn btn-paket mt-3 wa-order" data-paket="Paket Grup" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Pesan Sekarang <i class="fab fa-whatsapp ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- GALERI -->
+  <!-- ========================================= -->
+  <section id="galeri" class="section-galeri" style="background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);">
+    <div class="container position-relative">
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-badge">GALERI</span>
+        <h2 class="section-title">Galeri Foto</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="galeri-img"><img src="https://i.imgur.com/5cZ7nDq.jpeg" alt="galeri1" /><div class="galeri-overlay"><i class="bi bi-search"></i></div></div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="galeri-img"><img src="https://i.imgur.com/CzBCAAE.jpeg" alt="galeri2" /><div class="galeri-overlay"><i class="bi bi-search"></i></div></div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="galeri-img"><img src="https://i.imgur.com/biPN5mr.jpeg" alt="galeri3" /><div class="galeri-overlay"><i class="bi bi-search"></i></div></div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="galeri-img"><img src="https://i.imgur.com/NY2D1YB.jpeg" alt="galeri4" /><div class="galeri-overlay"><i class="bi bi-search"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- TESTIMONI DENGAN BACKGROUND GAMBAR -->
+  <!-- ========================================= -->
+  <section id="testimoni" class="section-testimoni" style="background-image: url('https://i.imgur.com/StHBlCg.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="section-overlay" style="background: rgba(11, 42, 59, 0.78);"></div>
+    <div class="container position-relative">
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-badge" style="background: linear-gradient(45deg, #f9d77e, #f5a623);">TESTIMONI</span>
+        <h2 class="section-title" style="color: #ffffff;">Apa Kata Mereka</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+          <div class="card card-testi p-4 h-100" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <div class="testi-header">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="avatar" class="testi-avatar" />
+              <div class="testi-user"><h6 class="mb-0">Maya S.</h6><small class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i>Bali, 2025</small></div>
+            </div>
+            <div class="testi-stars"><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></div>
+            <p class="testi-text">"Pengalaman luar biasa! Destinasi yang ditawarkan sangat indah, pelayanan ramah. Puas!"</p>
+            <div class="testi-footer"><span class="testi-date"><i class="bi bi-calendar3 me-1"></i>2 minggu lalu</span><span class="testi-verified"><i class="bi bi-patch-check-fill text-success"></i> Terverifikasi</span></div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+          <div class="card card-testi p-4 h-100" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <div class="testi-header">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar" class="testi-avatar" />
+              <div class="testi-user"><h6 class="mb-0">Rizki A.</h6><small class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i>Raja Ampat, 2026</small></div>
+            </div>
+            <div class="testi-stars"><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-half text-warning"></i></div>
+            <p class="testi-text">"Paket premium worth it! Pemandangan bawah laut tak terlupakan. Terima kasih PesonaNusa."</p>
+            <div class="testi-footer"><span class="testi-date"><i class="bi bi-calendar3 me-1"></i>1 bulan lalu</span><span class="testi-verified"><i class="bi bi-patch-check-fill text-success"></i> Terverifikasi</span></div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+          <div class="card card-testi p-4 h-100" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <div class="testi-header">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="avatar" class="testi-avatar" />
+              <div class="testi-user"><h6 class="mb-0">Dewi L.</h6><small class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i>Borobudur, 2025</small></div>
+            </div>
+            <div class="testi-stars"><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></div>
+            <p class="testi-text">"Tour guide ramah, itinerary jelas. Sunrise di Borobudur bikin merinding. Rekomendasi banget!"</p>
+            <div class="testi-footer"><span class="testi-date"><i class="bi bi-calendar3 me-1"></i>3 minggu lalu</span><span class="testi-verified"><i class="bi bi-patch-check-fill text-success"></i> Terverifikasi</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- FAQ -->
+  <!-- ========================================= -->
+  <section id="faq" class="section-faq" style="background: #ffffff;">
+    <div class="container position-relative">
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">Pertanyaan Umum</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"><i class="bi bi-question-circle-fill text-warning me-3"></i> Bagaimana cara memesan paket wisata?</button></h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Anda dapat memesan paket wisata dengan mengklik tombol "Pesan Sekarang" pada paket yang diinginkan, atau menghubungi kami melalui WhatsApp.</div></div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"><i class="bi bi-question-circle-fill text-warning me-3"></i> Apakah ada diskon untuk pembelian grup?</button></h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Ya, kami menyediakan diskon khusus untuk pembelian grup dengan minimal 10 orang.</div></div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"><i class="bi bi-question-circle-fill text-warning me-3"></i> Bagaimana jika cuaca buruk saat perjalanan?</button></h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Kami akan memantau kondisi cuaca dan memberikan informasi terbaru kepada Anda.</div></div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"><i class="bi bi-question-circle-fill text-warning me-3"></i> Apakah tersedia tour guide berbahasa Inggris?</button></h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Tentu! Kami menyediakan tour guide yang fasih berbahasa Inggris dan beberapa bahasa asing lainnya.</div></div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5"><i class="bi bi-question-circle-fill text-warning me-3"></i> Apa saja yang termasuk dalam paket wisata?</button></h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Umumnya paket mencakup transportasi, akomodasi, makan, guide, dan tiket masuk destinasi.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- KONTAK -->
+  <!-- ========================================= -->
+  <section id="kontak" class="section-kontak" style="background: linear-gradient(135deg, #f0f4f8 0%, #e3eaf0 100%);">
+    <div class="container position-relative">
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-badge">KONTAK</span>
+        <h2 class="section-title">Hubungi Kami</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="bg-white p-4 rounded-4 shadow-sm contact-info">
+            <div class="contact-item">
+              <i class="bi bi-geo-alt-fill text-warning"></i>
+              <div><h6>Alamat</h6><p>Jl. Nusantara Indah No. 88, Jakarta Selatan, Indonesia</p></div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill text-warning"></i>
+              <div><h6>Email</h6><p>info@pesonanusa@gmail.com</p></div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone-fill text-warning"></i>
+              <div><h6>Telepon</h6><p>+62 882 1968 7504</p></div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-clock-fill text-warning"></i>
+              <div><h6>Jam Operasional</h6><p>Senin - Minggu: 08.00 - 22.00</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.7675365233!2d106.77171853789915!3d-6.229728000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1741082000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0; display:block; min-height: 350px;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-8">
+          <div class="contact-form-wrapper">
+            <h4 class="contact-form-title"><i class="bi bi-envelope-paper-fill me-2 text-warning"></i>Kirim Pesan</h4>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control form-control-lg" id="namaLengkap" placeholder="Masukkan nama Anda" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="email" placeholder="nama@email.com" required />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control form-control-lg" id="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-submit-form"><i class="bi bi-send me-2"></i>Kirim Pesan</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================= -->
+  <footer class="footer" style="background: #0b2a3b;">
+    <div class="container position-relative">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-brand"><i class="bi bi-compass-fill me-2" style="color: #f9d77e;"></i>PesonaNusa</h5>
+          <p class="footer-desc">Platform wisata terpercaya yang menghubungkan Anda dengan keindahan alam dan budaya Indonesia.</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title">Menu</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinasi">Destinasi</a></li>
+            <li><a href="#event">Event</a></li>
+            <li><a href="#paket">Paket</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title">Layanan</h6>
+          <ul class="footer-links">
+            <li><a href="#paket">Paket Wisata</a></li>
+            <li><a href="#destinasi">Tour Guide</a></li>
+            <li><a href="#kontak">Reservasi</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-title">Subscribe</h6>
+          <p class="footer-desc">Dapatkan informasi promo dan destinasi terbaru.</p>
+          <form id="subscribeForm" class="footer-subscribe">
+            <input type="email" class="form-control" id="subscribeEmail" placeholder="Email Anda" required />
+            <button type="submit" class="btn btn-warning"><i class="bi bi-send"></i></button>
+          </form>
+          <div id="subscribeMessage" class="mt-2" style="display:none; color: #f9d77e; font-size: 0.9rem;"></div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <span>© 2026 PesonaNusa. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================= -->
+  <!-- ELFSIGHT WHATSAPP FLOATING WIDGET -->
+  <!-- ========================================= -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-e889a1bb-dd6b-4230-91c2-865bcbadecd2" data-elfsight-app-lazy>
+  </div>
+  
+  <!-- ========================================= -->
+  <!-- SCRIPTS -->
+  <!-- ========================================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
